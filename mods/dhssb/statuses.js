@@ -14,7 +14,7 @@ exports.BattleStatuses = {
 		exists: true,
 		effectType: 'Ability',
 		onStart: function () {
-			this.add('raw|<div class="chat chatmessage-uncleflacco"><strong style="color:hsl(3,82%,46.53322260126517%);"><small>%</small><span class="username" data-name="UncleFlacco">UncleFlacco</span>:</strong> <em><img src="http://i.imgur.com/v4l4e0o.gif" title="feelsabsol" width="50" height="50"> I love you, [players name]!</em></div>');
+			this.add('raw|<div class="chat chatmessage-uncleflacco"><strong style="color:hsl(3,82%,46.53322260126517%);"><small>%</small><span class="username" data-name="UncleFlacco">UncleFlacco</span>:</strong> <em><img src="http://i.imgur.com/v4l4e0o.gif" title="feelsabsol" width="50" height="50"> I love you, " + pokemon.side.name + "!</em></div>');
 		},
 		onFaint: function(pokemon) {
 			this.add('raw|<div class="chat chatmessage-uncleflacco"><strong style="color:hsl(3,82%,46.53322260126517%);"><small>%</small><span class="username" data-name="UncleFlacco">UncleFlacco</span>:</strong> <em><img src="http://i.imgur.com/ljl6Sfd.png" title="feelsrip" width="50" height="50"> <img src="http://i.imgur.com/jTTPtyW.jpg?1" title="feelsshivam" width="50" height="50"></em></div>');
